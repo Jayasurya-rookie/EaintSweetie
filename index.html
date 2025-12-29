@@ -13,6 +13,9 @@
         font-family: "Inter", sans-serif;
         height: 100vh;
         touch-action: manipulation;
+        color:#81f7e7;
+        
+        
         /* background: linear-gradient(135deg, #f9a8d4, #f3e8ff); */
          /* Romantic dark neon background */
   background:
@@ -43,6 +46,7 @@
         transition: opacity 0.6s ease; /* smooth fade */
       }
 
+
       .step {
         position: absolute;
         width: 100%;
@@ -50,7 +54,7 @@
         padding: 40px;
         /* background: rgba(255, 255, 255, 0.509); */
           background: rgba(10, 0, 20, 0.65);
-   backdrop-filter: blur(16px);
+   backdrop-filter: blur(1px);
    border-radius: 22px;
   box-shadow:
     0 0 25px rgba(255, 0, 150, 0.35),
@@ -72,7 +76,10 @@
         opacity: 1;
         transform: translateY(0);
         pointer-events: all;
+        color: #c0a0bb!important;
+
       }
+   
       /* Background video wrapper (behind your step cards) */
       #bg-video-wrap {
         position: fixed;
@@ -179,7 +186,7 @@
         /* background: white; */
         /* border-radius: 15px; */
           background: rgba(0, 0, 0, 0.55);
-  color: #ffffff;
+  color: #fff3f3;
   border-radius: 16px;
   box-shadow: 0 0 20px rgba(255, 0, 128, 0.25);
         padding: 20px;
@@ -257,11 +264,50 @@
       }
 
 
+      /* Background image ONLY when Step 1 is active */
+  #step1.active {
+  background-image: url("TOMO THANKS.png"); /* your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: .8;
+}
+#step1 {
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 2;   /* 🔥 IMPORTANT */
+  color: #000;
+}
+#step1 p {
+  color: #000000 !important;
+  opacity: 1;
+}
+
+#step3.active {
+   max-height: calc(100vh - 140px);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+
+
+}
+@media (max-width: 768px) {
+  #step3.active {
+    max-height: calc_bp(100vh - 100px);
+    padding-bottom: 80px; /* space for button */
+  }
+}
+
+
+
+
+
+
+
 
 
     </style>
     <!-- External CSS -->
-    <title>Eaint Sweetie❤️</title>
+    <title>For Eaint Sweetie ❤️</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
@@ -310,66 +356,73 @@
         <div class="step active" id="step1">
           <div class="emoji heart-beat">❤️</div>
           <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gradient">
-            Hi babe(*°▽°*)
+            Oii Tomo Chan(*°▽°*)
           </h1>
-          <p class="text-xl text-gray-700 mb-8">
-            I made something little special for you...
+          <p class="text-xl mb-8">
+            I made something little gift for you...
           </p>
-          <button class="btn" id="start-btn">Click here✌️💖</button>
+          <button class="btn" id="start-btn">Click Tomo✌️💖</button>
         </div>
 
         <!-- Step 2: Birthday Message -->
         <div class="step" id="step2">
-          <div class="emoji">🎉</div>
+          <div class="emoji">🎉😁</div>
           <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gradient">
             Dec 30
           </h2>
-          <p class="text-lg text-gray-700 mb-6">
-            On your special day, I want you to know how special you are to me, 
-            <!-- You are the art of my Heart💖 -->
+          <p class="text-xl mb-8">
+            On your special day, I hope u will not make more trouble to trouble the trouble. 
+            bcx u r the trouble, I want you to know how special you are to me 💖
           </p>
-          <button class="btn" id="next-btn-2">How pagal u are</button>
+          <button class="btn" id="next-btn-2">click karo yar</button>
         </div>
 
         <!-- Step 3: Reasons You're Amazing -->
         <div class="step" id="step3">
           <h2 class="text-3xl md:text-4xl font-bold mb-8 text-gradient">
-            I -----------------
+            Pagal 
           </h2>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
             <div class="reason-card">
               <div class="emoji text-3xl">(●'◡'●)</div>
               <h3 class="text-xl font-bold mb-2 text-pink-600">
-                Your 🌻
+                🌻
               </h3>
-              <p class="text-gray-700">
-                --------------
+              <p class="text-xl mb-8">
+                You call me pagal,
+but you’re the reason for all my madness 😌❤️💌
+             
               </p>
             </div>
             <div class="reason-card">
-              <div class="emoji text-3xl">..........</div>
-              <h3 class="text-xl font-bold mb-2 text-pink-600">PAKKA</h3>
-              <p class="text-gray-700">😶‍🌫️---------------</p>
+              <div class="emoji text-3xl">😁</div>
+              <h3 class="text-xl font-bold mb-2 text-pink-600"></h3>
+              <p class="text-xl mb-8">
+                Yes, I’m pagal…
+pagal for your smile,
+pagal for your care,
+pagal for you 💖
+              </p>
             </div>
             <div class="reason-card">
-              <div class="emoji text-3xl">🥀</div>
-              <h3 class="text-xl font-bold mb-2 text-pink-600">...........</h3>
-              <p class="text-gray-700">
-                <!--The days feel longer when your smile😊 is far, Nights fall quiet
-                without ur familiar star. My laughter pauses waiting for urs to
-                -- appear(*-*). -->
-                I'm really glad to meet u. 
+              <div class="emoji text-3xl">💌 Softer & Sweet of u</div>
+              <h3 class="text-xl font-bold mb-2 text-pink-600"></h3>
+              <p class="text-xl mb-8">
+your smile 😊 feels far away, days slow down,
+and nights turn quiet without you shining star.
+Even my laughter awaits for you to appear.
+Arigato babe, for ruling my happiness in every moment 💖
               </p>
             </div>
           </div>
-          <button class="btn" id="next-btn-3">Click karo yar</button>
+          <button class="btn" id="next-btn-3">Click</button>
         </div>
 
         <!-- Step 4: Memory Lane -->
         <div class="step" id="step4">
           <div class="emoji">📸</div>
           <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gradient">
-            Remember me always...
+            I hope u Remember me always...
           </h2>
           <div
             class="bg-gradient-to-r from-pink-200 to-rose-200 rounded-xl p-8 mb-8 flex flex-col justify-center items-center"
@@ -381,14 +434,13 @@
               alt=""
               srcset=""
             />
-            <p class="text-lg text-gray-700 italic mt-2">
+            <p class="text-xl mb-8">
               ()
             </p>
           </div>
-          <p class="text-lg text-gray-700 mb-6">
-            <!-- Every moment with you becomes a cherished🍒🌸 memory. Whether we're
-            laughing together or just enjoying the silence, time with you is
-            always special yar. -->------------------------------
+          <p class="text-xl mb-8">
+            Be happy with every moment to make a cherished🍒🌸 memory.
+           
           </p>
           <button class="btn" id="next-btn-4">Touch me</button>
         </div>
@@ -397,18 +449,18 @@
         <div class="step" id="step5">
           <div class="emoji">🎂</div>
           <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gradient">
-            My Small Presence (≧▽≦)
+            Finally ur 🎁 (≧▽≦)
           </h2>
-          <p class="text-lg text-gray-700 mb-8">
+          <p class="text-xl mb-8">
             May your heart be filled with joy, laughter, and dreams come true.
             May you always know how special you are to me and i feel lucky to
-            have u babe✌️💖
+            have u tomo✌️💖
           </p>
-          <p class="text-xl font-semibold text-pink-600 mb-8">
+          <p class="text-xl mb-8">
             Happie Birthday,Eaint Chue🎂! ❤️
           </p>
-          <button class="btn" id="confetti-btn">click!</button>
-          <p class="mt-8 text-gray-500">
+          <button class="btn" id="confetti-btn">click to celebrate!</button>
+          <p class="text-xl mb-8">
             Made with ❤️ just for you. I hope u like it😉
           </p>
         </div>
